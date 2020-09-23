@@ -1,22 +1,34 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const Button = styled.button`
+  background: red;
+  border: 1px solid black;
+  padding: 0.5rem;
+`
+
+const IndexPage = () => {
+  const [num, setNum] = useState(0)
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h1>New Site coming soon...</h1>
+      <Button
+        onClick={() => {
+          setNum(prevNum => prevNum + 1)
+        }}
+      >
+        click me
+      </Button>
+      <p>{num}</p>
+      <Link to="/page-2/">Go to page 2</Link> <br />
+    </Layout>
+  )
+}
 
 export default IndexPage
