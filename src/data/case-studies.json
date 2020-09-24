@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Durham University",
+    "description": "User research and website design.",
+    "tags": ["website redesign", "research"],
+    "imageName": "durham.png"
+  },
+  {
+    "title": "UCAS Course Search",
+    "description": "Website redevelopment.",
+    "tags": ["design", "iterative improvement"],
+    "imageName": "ucas.png"
+  },
+  {
+    "title": "International Animal Rescue",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    "tags": ["petting animals", "gerbil research"],
+    "imageName": "durham.png"
+  }
+]

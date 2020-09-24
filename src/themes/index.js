@@ -8,9 +8,26 @@ export const colours = {
 }
 
 export const fonts = {
-  primary: "OpenSans",
+  primary: "Open Sans",
 }
 
-export const fontSizes = ["1rem"]
+export const fontSizes = ["16px", "18px", "22px", "25px", "37px", "42px"]
 
-export const spacing = []
+export const spacing = [
+  "1rem",
+  "1.5rem",
+  "2rem",
+  "2.5rem",
+  "3rem",
+  "3.5rem",
+  "4rem",
+]
+
+export const maxWidth = {
+  desktop: "1000px",
+  tablet: "700px",
+  mobile: "500px",
+}
+
+export const tabletBP = "1050px"
+export const mobileBP = "836px"

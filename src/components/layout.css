@@ -1,3 +1,13 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../__fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../__fonts/OpenSans-Bold.ttf);
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: OpenSans;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -590,8 +600,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
+} */
+
+.active-link {
+  border-bottom: 3px solid #0cecb7;
 }

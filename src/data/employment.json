@@ -1,0 +1,35 @@
+[
+  {
+    "dates": "April 2019 - present",
+    "company": "CTI Digital",
+    "roles": [
+      {
+        "jobTitle": "UX designer",
+        "description": [
+          "Working in the Strategy and User Experience team at CTI to work directly with clients to deliver fantastic digital products.",
+          "In my time at CTI I’ve worked with a wide range of clients some of which include Manchester Metropolitan University, Durham University, International Animal Rescue, Churchill China, The General Optical Council, Drinkaware, Polyflor and Keep Britain Tidy.",
+          "Typical activies can include: \r \n Workshopping, user research, usability testing, data analysis, persona/ user journey creation, information architecture, wireframing, prototyping and design."
+        ]
+      }
+    ]
+  },
+  {
+    "dates": "2015 - 2019",
+    "company": "UCAS",
+    "roles": [
+      {
+        "jobTitle": "UX designer",
+        "description": [
+          "Working within the UX team, I worked alongside development teams and product owners to deliver improvements on various projects including the main UCAS information and advice site, the search functionality for courses and developing a new product for the business facing side of the charity.",
+          "Day-to-day tasks included creating wireframes, prototypes and high fidelity mockups, usability testing with students, and developing the bespoke UCAS Design Framework."
+        ]
+      },
+      {
+        "jobTitle": "Digital Designer/ Junior Digital Designer",
+        "description": [
+          "I designed, created and maintained UCAS’ marketing email templates, campaign pages, digital event software, social media and video content."
+        ]
+      }
+    ]
+  }
+]
