@@ -15,20 +15,22 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Hero>
-        <H1 darkBg>Hello!</H1>
-        <H4 darkBg>
-          I'm <strong>Hannah Braybrook</strong>, a <strong>UX designer</strong>{" "}
-          currently @ CTI Digital{" "}
-          <span role="img" aria-label="dance party">
-            💃🎉
-          </span>
-        </H4>
-        <Email />
-        <LinkedIn />
+        <div>
+          <H1 darkBg>Hello!</H1>
+          <H4 darkBg>
+            I'm <strong>Hannah Braybrook</strong>, a{" "}
+            <strong>UX designer</strong> currently @ CTI Digital{" "}
+            <span role="img" aria-label="dance party">
+              💃🎉
+            </span>
+          </H4>
+          <Email />
+          <LinkedIn />
+        </div>
       </Hero>
       <ContentWrapper direction="column" breakout>
         <CaseStudyList />
-        <Button>See more work</Button>
+        <Button to="/work">See more work</Button>
       </ContentWrapper>
     </Layout>
   )

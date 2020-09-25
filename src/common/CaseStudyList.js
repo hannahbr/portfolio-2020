@@ -4,6 +4,8 @@ import caseStudies from "../data/case-studies.json"
 import CaseStudyCard from "./CaseStudyCard"
 
 const Wrapper = styled.div`
+  padding-bottom: ${({ theme }) => theme.spacing[3]};
+
   @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
     display: flex;
     overflow-x: scroll;

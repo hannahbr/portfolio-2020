@@ -18,7 +18,7 @@ const StyledArticle = styled.article`
     & div {
       & div {
         & div {
-          opacity: 1;
+          background: ${({ theme }) => theme.colours.primary2};
         }
       }
     }
@@ -27,7 +27,7 @@ const StyledArticle = styled.article`
   transition: 0.5s;
 
   @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
-    min-width: 350px;
+    min-width: 300px;
     height: auto;
     flex-direction: column;
     margin-left: ${({ theme }) => theme.spacing[1]};

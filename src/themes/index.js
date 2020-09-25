@@ -5,6 +5,8 @@ export const colours = {
   secondary1: "#000", // secondary black used for below the header
   secondary2: "#fff", // white - used as text and bg colour
   secondary3: "#898787", // grey used for subheadings
+  primary2Fade: "#EEFDFA",
+  projectGoal: "#FBF8F8",
 }
 
 export const fonts = {

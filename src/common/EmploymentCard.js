@@ -1,5 +1,5 @@
 import React from "react"
-import { H3, H4, P } from "./typography"
+import { H3, P } from "./typography"
 import styled from "styled-components"
 
 const RolesCard = styled.section`
@@ -7,6 +7,21 @@ const RolesCard = styled.section`
   border-radius: 5px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.42);
   padding: ${({ theme }) => theme.spacing[4]} ${({ theme }) => theme.spacing[6]};
+
+  /* @media only screen and (max-width: 943px) {
+    padding: ${({ theme }) =>
+    theme.spacing[3]}
+      ${({ theme }) =>
+    theme
+      .spacing[5]};
+  }
+
+  @media only screen and (max-width: 576px) {
+    padding: ${({
+    theme,
+  }) => theme.spacing[2]}
+      ${({ theme }) => theme.spacing[0]};
+  } */
 `
 
 const Dates = styled(P)`
@@ -21,26 +36,15 @@ const CompanyName = styled(H3)`
 `
 
 const EmploymentArticle = styled.article`
-  margin-bottom: ${({ theme }) => theme.spacing[2]};
+  margin-bottom: ${({ theme }) => theme.spacing[4]};
 `
 
-const EmploymentCard = ({ employment }) => {
+const EmploymentCard = ({ dates, company, children }) => {
   return (
     <EmploymentArticle>
-      <Dates small>{employment.dates}</Dates>
-      <CompanyName>{employment.company}</CompanyName>
-      <RolesCard>
-        {employment.roles.map(role => {
-          return (
-            <>
-              <H4>{role.jobTitle}</H4>
-              {role.description.map(paragraph => {
-                return <P>{paragraph}</P>
-              })}
-            </>
-          )
-        })}
-      </RolesCard>
+      <Dates small>{dates}</Dates>
+      <CompanyName>{company}</CompanyName>
+      <RolesCard>{children}</RolesCard>
     </EmploymentArticle>
   )
 }

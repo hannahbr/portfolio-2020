@@ -39,7 +39,6 @@ const StyledP = styled(P)`
 `
 
 const Header = ({ siteTitle, path }) => {
-  console.log("%c path: ", "background:blue; color:white;", path)
   return (
     <StyledHeader>
       <ContentWrapper direction="row">

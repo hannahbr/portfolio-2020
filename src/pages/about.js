@@ -12,7 +12,7 @@ const AboutPage = () => {
     <Layout>
       <SEO title="about" />
       <Hero withPictures>
-        <div>
+        <div style={{ paddingRight: "3rem" }}>
           <P darkBg>Home / About /</P>
           <H1 darkBg>About</H1>
           <P darkBg>I’m a UX designer currently living in Manchester.</P>{" "}
@@ -29,9 +29,27 @@ const AboutPage = () => {
             digital products that people love.
           </P>
         </div>
-        <div style={{ width: "60%" }}>
-          <img src={hannah1} />
-          <img src={hannah2} />
+        <div>
+          <img
+            style={{
+              height: "200px",
+              width: "400px",
+              paddingLeft: "2rem",
+              objectFit: "cover",
+            }}
+            src={hannah1}
+            alt="Winning a competition"
+          />
+          <img
+            style={{
+              height: "200px",
+              width: "400px",
+              objectFit: "cover",
+              paddingLeft: "2rem",
+            }}
+            src={hannah2}
+            alt="Giving a presentation"
+          />
         </div>
       </Hero>
       <EmploymentList />

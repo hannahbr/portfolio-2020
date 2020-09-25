@@ -1,5 +1,5 @@
 import React from "react"
-import ContentWrapper from "./ContentWrapper"
+// import ContentWrapper from "./ContentWrapper"
 import styled from "styled-components"
 
 const StyledHero = styled.section`
@@ -7,11 +7,25 @@ const StyledHero = styled.section`
   padding: ${({ theme }) => theme.spacing[3]};
 `
 
-const Hero = ({ children, withPictures }) => {
-  const direction = withPictures ? "row" : "column"
+const HeroWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  max-width: ${({ theme }) => theme.maxWidth.desktop};
+  margin: auto;
+  justify-content: space-between;
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletBP}) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
+  }
+`
+
+const Hero = ({ children }) => {
   return (
     <StyledHero>
-      <ContentWrapper direction={direction}>{children}</ContentWrapper>
+      <HeroWrapper>{children}</HeroWrapper>
     </StyledHero>
   )
 }
