@@ -30,7 +30,7 @@ const CaseStudy = ({ content }) => {
     companyName,
     conducted,
     time,
-    status,
+    contributions,
     description,
     tags,
     heroImg,
@@ -50,7 +50,7 @@ const CaseStudy = ({ content }) => {
           <P darkBg>
             Conducted: {conducted} <br />
             Time: {time} <br />
-            Status: {status}
+            Contributions: {contributions}
           </P>
           <P darkBg>{description}</P>
           <Tags tags={tags} dark />
