@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   padding: ${({ theme }) => theme.spacing[2]};
 `
 
-const SocialWrapper = styled.div`
+export const SocialWrapper = styled.div`
   display: flex;
   align-items: center;
   & a {

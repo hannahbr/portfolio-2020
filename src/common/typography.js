@@ -37,6 +37,7 @@ export const P = styled.p`
 export const A = styled.a`
   text-decoration: none;
   font-family: "OpenSans";
-  color: ${({ theme }) => theme.colours.secondary2};
+  color: ${({ theme, lightBg = false }) =>
+    lightBg ? "black" : theme.colours.secondary2};
   border-bottom: 3px solid ${({ theme }) => theme.colours.primary1};
 `

@@ -1,18 +1,21 @@
 [
   {
     "title": "Durham University",
+    "endpoint": "durham",
     "description": "User research and website design.",
     "tags": ["website redesign", "research"],
     "imageName": "durham.png"
   },
   {
     "title": "UCAS Course Search",
+    "endpoint": "ucas",
     "description": "Website redevelopment.",
     "tags": ["design", "iterative improvement"],
     "imageName": "ucas.png"
   },
   {
     "title": "International Animal Rescue",
+    "endpoint": "international-animal-rescue",
     "description": "hello",
     "tags": ["petting animals", "gerbil research"],
     "imageName": "durham.png"

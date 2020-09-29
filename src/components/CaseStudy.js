@@ -1,9 +1,12 @@
 import React from "react"
 import styled from "styled-components"
+import Button from "../common/Button"
 import ContentWrapper from "../common/ContentWrapper"
 import Hero from "../common/Hero"
+import Img from "../common/Img"
 import Tags from "../common/Tags"
 import { H1, H2, P } from "../common/typography"
+import ModalImage from "react-modal-image"
 
 const ProjectGoalWrapper = styled.section`
   display: flex;
@@ -21,9 +24,17 @@ const SectionsWrapper = styled.div`
 
 const SectionsContainer = styled.div`
   margin: 0 auto;
-  padding: ${({ theme }) => theme.spacing[5]} 0;
+  padding: ${({ theme }) => theme.spacing[0]} 0;
   max-width: 700px;
 `
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const HeroImage = styled(ModalImage)``
 
 const CaseStudy = ({ content }) => {
   const {
@@ -40,6 +51,7 @@ const CaseStudy = ({ content }) => {
   } = content
 
   const heroImage = require(`../images/${heroImg}`)
+  const heroLarge = require("../images/durham-hero.png")
 
   return (
     <>
@@ -55,19 +67,12 @@ const CaseStudy = ({ content }) => {
           <P darkBg>{description}</P>
           <Tags tags={tags} dark />
         </div>
-        <img
-          src={heroImage}
-          style={{ objectFit: "cover", width: "50%" }}
-          alt={heroImgAlt}
-        />
+        <HeroImage small={heroImage} large={heroLarge} alt={heroImgAlt} />
       </Hero>
       <ProjectGoalWrapper>
         <ContentWrapper direction="row">
-          <img
-            src={heroImage}
-            style={{ objectFit: "cover", width: "50%", paddingRight: "2rem" }}
-          />
-          <div>
+          <Img src={heroImg} alt={heroImgAlt} />
+          <div style={{ paddingLeft: "2rem" }}>
             <H2>Project Goal</H2>
             {projectGoal.description}
           </div>
@@ -76,6 +81,9 @@ const CaseStudy = ({ content }) => {
       <SectionsWrapper>
         <SectionsContainer>{sections}</SectionsContainer>
       </SectionsWrapper>
+      <ButtonWrapper>
+        <Button to="/work">See more work</Button>
+      </ButtonWrapper>
     </>
   )
 }

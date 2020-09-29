@@ -29,7 +29,6 @@ const Text = styled.p`
 `
 
 const Tags = ({ tags, noFade, dark }) => {
-  console.log(tags, noFade, dark)
   return (
     <TagsContainer>
       {tags.map((tag, i) => (

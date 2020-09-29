@@ -26,6 +26,12 @@ const NavLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.colours.secondary2};
   margin-left: ${({ theme }) => theme.spacing[2]};
+  border-bottom: 0px solid #0cecb7;
+  transition: 0.1s;
+
+  &:hover {
+    border-bottom: 3px solid #0cecb7;
+  }
 `
 
 const StyledP = styled(P)`
@@ -51,10 +57,18 @@ const Header = ({ siteTitle, path }) => {
           </StyledP>
         </HomeLink>
         <nav>
-          <NavLink to="/work" activeClassName="active-link">
+          <NavLink
+            to="/work"
+            activeStyle={{ borderBottom: "3px solid #0cecb7" }}
+            partiallyActive={true}
+          >
             Work
           </NavLink>
-          <NavLink to="/about" activeClassName="active-link">
+          <NavLink
+            to="/about"
+            activeStyle={{ borderBottom: "3px solid #0cecb7" }}
+            partiallyActive={true}
+          >
             About
           </NavLink>
         </nav>

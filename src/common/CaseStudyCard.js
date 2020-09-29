@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Tags from "./Tags"
@@ -43,22 +44,29 @@ const CardInfo = styled.div`
   margin: auto 0;
 `
 
+const WorkLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`
+
 const CaseStudyCard = ({
-  caseStudy: { title, description, tags, imageName },
+  caseStudy: { title, endpoint, description, tags, imageName },
 }) => {
   let image
   if (imageName) {
     image = require(`../images/${imageName}`)
   }
   return (
-    <StyledArticle>
-      {imageName && <CardImg src={image} />}
-      <CardInfo>
-        <H4>{title}</H4>
-        <P>{description}</P>
-        <Tags tags={tags} />
-      </CardInfo>
-    </StyledArticle>
+    <WorkLink to={`/work/${endpoint}`}>
+      <StyledArticle>
+        {imageName && <CardImg src={image} />}
+        <CardInfo>
+          <H4>{title}</H4>
+          <P>{description}</P>
+          <Tags tags={tags} />
+        </CardInfo>
+      </StyledArticle>
+    </WorkLink>
   )
 }
 
