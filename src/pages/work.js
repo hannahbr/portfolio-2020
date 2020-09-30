@@ -63,7 +63,9 @@ const WorkPage = () => {
             large={"rcot.png"}
             alt="Design - Redesigning the home page for the Royal College of Occupational Therapists."
           />
-          <CategoryLabel> Example 3</CategoryLabel>
+        </WorkImgWrapper>
+        <CategoryLabel> Example 3</CategoryLabel>
+        <WorkImgWrapper>
           <ImgModal
             className="work-modal"
             small={"laird-tn.png"}

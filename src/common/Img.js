@@ -38,6 +38,7 @@ export const ImgWrapper = styled.div`
     width: auto;
     overflow-x: scroll;
     flex-wrap: nowrap;
+    padding-top: 1rem;
   }
 `
 
