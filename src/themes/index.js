@@ -29,6 +29,7 @@ export const maxWidth = {
   desktop: "1000px",
   tablet: "700px",
   mobile: "500px",
+  hSR: "760px",
 }
 
 export const tabletBP = "1050px"

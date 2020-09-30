@@ -609,3 +609,28 @@ pre tt:after {
 /* .active-link {
   border-bottom: 3px solid #0cecb7;
 } */
+
+.modal-image {
+  height: auto;
+  min-width: 245px;
+  /* padding: 0 0.5rem; */
+}
+
+.modal-image:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.22);
+  transform: translate(0, -5px);
+  transition: 0.2s;
+}
+
+.work-modal {
+  margin: 0.5rem 0.3rem;
+  height: auto;
+  min-width: 320px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.42);
+}
+
+.work-modal:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.22);
+  transform: translate(0, -5px);
+  transition: 0.2s;
+}

@@ -36,7 +36,9 @@ export const LinkedIn = () => (
         fill={colours.primary2}
       />
     </svg>
-    <A>LinkedIn</A>
+    <A href="https://www.linkedin.com/in/hannah-braybrook-543098a1/">
+      LinkedIn
+    </A>
   </SocialWrapper>
 )
 
@@ -54,7 +56,7 @@ export const Email = () => (
         fill={colours.primary2}
       />
     </svg>
-    <A>braybrookhannah@gmail.com</A>
+    <A href="mailto:braybrookhannah@gmail.com">braybrookhannah@gmail.com</A>
   </SocialWrapper>
 )
 

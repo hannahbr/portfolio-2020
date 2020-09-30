@@ -1,12 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../common/Button"
-import ContentWrapper from "../common/ContentWrapper"
 import Hero from "../common/Hero"
-import Img from "../common/Img"
+import { Img } from "../common/Img"
 import Tags from "../common/Tags"
 import { H1, H2, P } from "../common/typography"
-import ModalImage from "react-modal-image"
 
 const ProjectGoalWrapper = styled.section`
   display: flex;
@@ -22,11 +20,11 @@ const SectionsWrapper = styled.div`
   background: ${({ theme }) => theme.colours.secondary2};
 `
 
-const SectionsContainer = styled.div`
-  margin: 0 auto;
-  padding: ${({ theme }) => theme.spacing[0]} 0;
-  max-width: 700px;
-`
+// const SectionsContainer = styled.div`
+//   margin: 0 auto;
+//   padding: ${({ theme }) => theme.spacing[0]} 0;
+//   max-width: 700px;
+// `
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -34,7 +32,37 @@ const ButtonWrapper = styled.div`
   align-items: center;
 `
 
-const HeroImage = styled(ModalImage)``
+const ProjectContentWrapper = styled.div`
+  max-width: ${({ theme }) => theme.maxWidth.desktop};
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletBP}) {
+    max-width: 95vw;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
+    max-width: ${({ theme }) => theme.maxWidth.mobile};
+    flex-direction: column;
+  }
+
+  & div {
+    padding-left: ${({ theme }) => theme.spacing[1]};
+    @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
+      padding: 0;
+    }
+  }
+`
+
+export const SectionContainer = styled.div`
+  margin: 0 auto;
+  padding: ${({ theme }) => theme.spacing[0]} ${({ theme }) => theme.spacing[2]}
+    0 ${({ theme }) => theme.spacing[2]};
+  max-width: 760px;
+`
 
 const CaseStudy = ({ content }) => {
   const {
@@ -50,9 +78,6 @@ const CaseStudy = ({ content }) => {
     sections,
   } = content
 
-  const heroImage = require(`../images/${heroImg}`)
-  const heroLarge = require("../images/dur-main.png")
-
   return (
     <>
       <Hero>
@@ -67,20 +92,21 @@ const CaseStudy = ({ content }) => {
           <P darkBg>{description}</P>
           <Tags tags={tags} dark />
         </div>
-        <HeroImage small={heroImage} large={heroLarge} alt={heroImgAlt} />
+        <div style={{ paddingTop: "1rem" }}>
+          <Img src={heroImg} alt={heroImgAlt} />
+        </div>
       </Hero>
       <ProjectGoalWrapper>
-        <ContentWrapper direction="row">
-          <Img src={heroImg} alt={heroImgAlt} />
-          <div style={{ paddingLeft: "2rem" }}>
+        <ProjectContentWrapper>
+          <Img src={projectGoal.image} alt={heroImgAlt} />
+          <div>
             <H2>Project Goal</H2>
             {projectGoal.description}
           </div>
-        </ContentWrapper>
+        </ProjectContentWrapper>
       </ProjectGoalWrapper>
-      <SectionsWrapper>
-        <SectionsContainer>{sections}</SectionsContainer>
-      </SectionsWrapper>
+      <SectionsWrapper>{sections}</SectionsWrapper>
+      {/* removed SectionsContainer from inner */}
       <ButtonWrapper>
         <Button to="/work">See more work</Button>
       </ButtonWrapper>
