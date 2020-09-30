@@ -38,6 +38,7 @@ const StyledP = styled(P)`
   opacity: 0.6;
   color: ${({ theme }) => theme.colours.secondary2};
   margin: 0 0 0 0.5rem;
+  line-height: 1.2em;
   @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
     display: none;
     width: 0;

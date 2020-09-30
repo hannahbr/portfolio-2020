@@ -10,8 +10,7 @@ const TagsContainer = styled.div`
 const CardTag = styled.div`
   border-radius: 2em;
   padding: 3px 15px;
-  margin: 0 ${({ theme }) => theme.spacing[0]}
-    ${({ theme }) => theme.spacing[0]} 0;
+  margin: 0 0.5em 0.7em 0;
   background-color: ${({ theme, noFade, dark }) =>
     dark
       ? theme.colours.primary3
