@@ -51,7 +51,7 @@ const CaseStudy = ({ content }) => {
   } = content
 
   const heroImage = require(`../images/${heroImg}`)
-  const heroLarge = require("../images/durham-hero.png")
+  const heroLarge = require("../images/dur-main.png")
 
   return (
     <>

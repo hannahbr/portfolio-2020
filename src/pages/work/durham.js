@@ -4,7 +4,7 @@ import { H3, P } from "../../common/typography"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-import ucasImg from "../../images/durham.png"
+import ucasImg from "../../images/dur-main.png"
 import Img from "../../common/Img"
 
 const content = {
@@ -14,10 +14,10 @@ const content = {
   contributions: "research, design",
   description: "Website research and redevelopment",
   tags: ["design", "research", "long-term"],
-  heroImg: "durham.png",
+  heroImg: "dur-main.png",
   heroImgAlt: "Durham home page",
   projectGoal: {
-    image: "durham.png",
+    image: "dur-goal.png",
     description: (
       <P>
         Durham uni’s website was overdue for an upgrade, and CTI was brought on
@@ -46,7 +46,7 @@ const content = {
         <li>Tree testing</li>
       </ul>
 
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
+      <Img small={"dur-testing-tn.png"} large={"dur-testing.png"} alt="A colleague and I in the process of conducting guerilla research" />
       <P>
         Through these activities we found out about frustrating or inefficient
         areas of their current website, behaviours and journeys of the user
@@ -58,8 +58,8 @@ const content = {
         <li>User personas (8x)</li>
         <li>User journeys (8x)</li>
       </ul>
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
+      <Img small={"dur-postit-tn.png"} large={"dur-postit.png"} alt="Some of the findings collated - there were a lot of post-its and another wall!" />
+      <Img small={"dur-persona-tn.png"} large={"dur-persona.png"} alt="The final personas and user journeys" />
       <P>Below is an example of a few of our findings:</P>
       <ul>
         <li>
@@ -97,8 +97,8 @@ const content = {
           High fidelity designs & style tiles (2x, completed by our designer)
         </li>
       </ul>
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
+      <Img small={"dur-wire-tn.png"} large={"dur-wire.png"} alt="Wireframe of potential autocomplete functionality" />
+      <Img small={"dur-sitemap-tn.png"} large={"dur-sitemap.png"} alt="View of the recommended sitemap created" />
       <P>
         Once we’d presented all of this to Durham and ensured it all worked for
         them and for the developers we did some more research to validate our
@@ -113,8 +113,8 @@ const content = {
           took notes and ensured all was running smoothly.)
         </li>
       </ul>
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
+      <Img small={"dur-heatmap-tn.png"} large={"dur-heatmap.png"} alt="Heatmap view of first click testing on the home page" />
+      <Img small={"dur-lab-test-tn.png"} large={"dur-lab-test.png"} alt="An image of me testing with a user in our UX lab" />
     </>,
     <>
       <H3>User considerations</H3>
@@ -147,10 +147,7 @@ const content = {
         to create the backend CMS and bring in our modular front end content.
         The site will be going live at some point in the near future!
       </P>
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
-      <Img small={"durham.png"} large={"durham.png"} alt="" />
+      <Img small={"dur-final-tn.png"} large={"dur-final.png"} alt="Renders of the final home page in high fidelity" />
     </>,
   ],
 }

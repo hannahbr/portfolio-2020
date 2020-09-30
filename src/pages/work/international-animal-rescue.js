@@ -4,7 +4,7 @@ import { H3, P } from "../../common/typography"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-import ucasImg from "../../images/ucas.png"
+import ucasImg from "../../images/iar-main.png"
 import Button from "../../common/Button"
 import Img from "../../common/Img"
 
@@ -15,10 +15,10 @@ const content = {
   contributions: "design, research, development",
   description: "Website redevelopment",
   tags: ["design", "development", "short-term"],
-  heroImg: "ucas.png",
+  heroImg: "iar-main.png",
   heroImgAlt: "International animal rescue home page design",
   projectGoal: {
-    image: "ucas.png",
+    image: "iar-goal.png",
     description: (
       <P>
         With a low budget, International Animal rescue wanted to improve the
@@ -38,6 +38,8 @@ const content = {
         ideation workshops, utilising Crazy-8s and art galleries covering the 3
         main areas that IAR wanted to get better at.
       </P>
+      <Img small={"iar-canvas-tn.png"} large={"iar-canvas.png"} alt="Outcomes of an initial project canvas workshop" />
+      <Img small={"iar-crazy8-tn.png"} large={"iar-crazy8.png"} alt="One of the crazy 8 outputs, providing great ideas and a view into what IAR wanted" />
       <P>
         To get user input we put a hotjar poll on the site, in order to get some
         benchmarking data for the future, and some open ended questions for
@@ -63,6 +65,7 @@ const content = {
         could be edited in Google slides and provided support for creating
         others.
       </P>
+      <Img small={"iar-persona-tn.png"} large={"iar-persona.png"} alt="Key persona created in Google slides for further editing/ duplication" />
       <P>
         We also provided a high level sitemap recommendation (2 levels of
         hierarchy) along with a content audit template so that going forward new
@@ -80,13 +83,12 @@ const content = {
         pages as they were developed.
       </P>
 
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
+      <Img small={"iar-mobile-tn.png"} large={"iar-mobile.png"} alt="Some lower fidelity wireframes for mobile" />
+      <Img small={"iar-canvas-tn.png"} large={"iar-canvas.png"} alt="A Lower fidelity screenshot of the wireframes" />
     </>,
     <>
       <H3>User considerations</H3>
       <P>xx</P>
-      <Img src={ucasImg} alt="" />
     </>,
     <>
       <H3>Challenges</H3>
@@ -104,10 +106,7 @@ const content = {
         at some point in the near future, where we can properly assess success
         and continue to implement improvements as and when needed.
       </P>
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
+      <Img small={"iar-final-tn.png"} large={"iar-final.png"} alt="Renders of the final home page in high fidelity" />
     </>,
   ],
 }

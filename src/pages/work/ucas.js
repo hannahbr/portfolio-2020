@@ -14,10 +14,10 @@ const content = {
   contributions: "design, research, development",
   description: "Website redevelopment",
   tags: ["design", "development", "long-term"],
-  heroImg: "ucas.png",
+  heroImg: "ucas-main.png",
   heroImgAlt: "Ucas Course search",
   projectGoal: {
-    image: "ucas.png",
+    image: "ucas-goal.png",
     description: (
       <P>
         One of the common criticisms we got in terms of user feedback was that
@@ -60,7 +60,7 @@ const content = {
         fidelity mockups up of the home page which took into account the
         improved information hierarchy.
       </P>
-      <Img src="ucas.png" alt="ucas homepage" />
+      <Img small={"ucas-home-tn.png"} large={"ucas-home.png"} alt="Final design of the home page" />
       <P>
         I designed alternate improvements to the general textual content on the
         website in order to make it easier to read - it hadn’t been updated by
@@ -73,7 +73,7 @@ const content = {
         used, and added new formats as there weren’t enough options for our
         editors which resulted in an overuse of CTAs.
       </P>
-      <Img src={ucasImg} alt="" />
+      <Img small={"ucas-content-tn.png"} large={"ucas-content.png"} alt="Subject guide high fidelity wire as a later iterative improvement" />
       <P>
         As developments from colleagues in other teams caught up we released a
         ‘joined up’ search. This enabled us to connect the different searches
@@ -92,14 +92,15 @@ const content = {
         improvements for the actual course pages. This included improving the
         information hierarchy, visual style and ease of use.
       </P>
-      <Img src={ucasImg} alt="" />
+      <Img small={"ucas-courses-tn.png"} large={"ucas-courses.png"} alt="Course search high fidelity wire as a later iterative improvement" />
+      <Img small={"ucas-map-tn.png"} large={"ucas-map.png"} alt="Course search map view high fidelity wire as a later iterative improvement" />
       <P>
         These improvements were achieved over a long period of time in chunks
         rather than in one go so we could assess the success of each change and
         see if it was indeed an improvement.
       </P>
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
+      <Img small={"ucas-guide-tn.png"} large={"ucas-guide.png"} alt="Subject guide high fidelity wire as a later iterative improvement" />
+      <Img small={"ucas-iterate-tn.png"} large={"ucas-iterate.png"} alt="Exmaple of 2 course details pages with iterative improvements on each" />
       <P>
         As we completed each of these stages we wanted to validate with users in
         person alongside our usual analysis of analytics and online feedback. We
@@ -108,7 +109,6 @@ const content = {
         to organise a few school visits to conduct some 1-1 testing with A level
         students.
       </P>
-      <Img src={ucasImg} alt="" />
     </>,
     <>
       <H3>User considerations</H3>
@@ -160,10 +160,7 @@ const content = {
         feedback from our end users through the website, where it used to be one
         of UCAS’ most frequent complaints in feedback.
       </P>
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
-      <Img src={ucasImg} alt="" />
+      <Img small={"ucas-final-tn.png"} large={"ucas-final.png"} alt="Course search page I designed & developed as a stop-gap between the joined-up search" />
     </>,
   ],
 }
