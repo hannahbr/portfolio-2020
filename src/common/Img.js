@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import ModalImage from "react-modal-image"
 import styled from "styled-components"
 
@@ -11,15 +11,12 @@ export const ImgModal = ({ small, large, alt, className }) => {
     console.log(err)
   }
 
-  const ImgEl = useRef(null)
-
   return (
     <ModalImage
       className={className || "modal-image"}
       small={smallSrc}
       large={largeSrc}
       alt={alt}
-      ref={ImgEl}
       hideZoom
       hideDownload
     />

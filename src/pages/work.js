@@ -15,7 +15,7 @@ const WorkImgWrapper = styled(ImgWrapper)`
 const CategoryLabel = styled(P)`
   color: ${({ theme }) => theme.colours.secondary3};
   padding: 0;
-  margin: 0;
+  margin-left: 2rem;
 `
 
 const WorkPage = () => {
