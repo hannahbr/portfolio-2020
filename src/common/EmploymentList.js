@@ -30,7 +30,7 @@ const SkillWrapper = styled.div`
 `
 
 const SkillsSection = styled.section`
-  margin-bottom: ${({ theme }) => theme.spacing[2]};
+  padding-bottom: ${({ theme }) => theme.spacing[2]};
 `
 
 const EmploymentPageWrapper = styled.div`

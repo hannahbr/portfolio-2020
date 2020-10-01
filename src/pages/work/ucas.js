@@ -212,7 +212,7 @@ const content = {
 const UcasPage = () => {
   return (
     <Layout>
-      <SEO title="Ucas UX" />
+      <SEO title="Ucas UX/UI" />
       <CaseStudy content={content} />
     </Layout>
   )

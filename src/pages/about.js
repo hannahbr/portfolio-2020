@@ -6,6 +6,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import hannah1 from "../images/hannah-about-1.png"
 import hannah2 from "../images/hannah-about-2.png"
+import styled from "styled-components"
+
+const ImgWrapper = styled.div`
+  @media only screen and (max-width: ${({ theme }) => theme.tabletBP}) {
+    display: flex;
+  }
+`
+
+const AboutImg = styled.img`
+  height: 200px;
+  width: 400px;
+  margin-left: 0.2rem;
+  object-fit: cover;
+  @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
+    width: 50%;
+  }
+`
 
 const AboutPage = () => {
   return (
@@ -29,28 +46,10 @@ const AboutPage = () => {
             digital products that people love.
           </P>
         </div>
-        <div>
-          <img
-            style={{
-              height: "200px",
-              width: "400px",
-              paddingLeft: "2rem",
-              objectFit: "cover",
-            }}
-            src={hannah1}
-            alt="Winning a competition"
-          />
-          <img
-            style={{
-              height: "200px",
-              width: "400px",
-              objectFit: "cover",
-              paddingLeft: "2rem",
-            }}
-            src={hannah2}
-            alt="Giving a presentation"
-          />
-        </div>
+        <ImgWrapper>
+          <AboutImg src={hannah1} alt="Winning a competition" />
+          <AboutImg src={hannah2} alt="Giving a presentation" />
+        </ImgWrapper>
       </Hero>
       <EmploymentList />
     </Layout>

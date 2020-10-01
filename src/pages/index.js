@@ -18,8 +18,7 @@ const IndexPage = () => {
         <div>
           <H1 darkBg>Hello!</H1>
           <H4 darkBg>
-            I'm <strong>Hannah Braybrook</strong>, a<strong>UX designer</strong>
-            currently @ CTI Digital
+            I'm Hannah Braybrook, a UX designer currently @ CTI Digital
             <span role="img" aria-label="dance party">
               💃🎉
             </span>

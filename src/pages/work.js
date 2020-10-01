@@ -10,12 +10,16 @@ import { ImgModal, ImgWrapper } from "../common/Img"
 
 const WorkImgWrapper = styled(ImgWrapper)`
   max-width: 1000px;
+  padding: 0 0 ${({ theme }) => theme.spacing[1]} 0;
 `
 
 const CategoryLabel = styled(P)`
   color: ${({ theme }) => theme.colours.secondary3};
   padding: 0;
-  margin-left: 2rem;
+  margin: 0;
+  @media only screen and (max-width: ${({ theme }) => theme.mobileBP}) {
+    margin-left: ${({ theme }) => theme.spacing[1]};
+  }
 `
 
 const WorkPage = () => {
@@ -66,19 +70,19 @@ const WorkPage = () => {
         </WorkImgWrapper>
         <CategoryLabel>Design</CategoryLabel>
         <WorkImgWrapper>
-        <ImgModal
+          <ImgModal
             className="work-modal"
             small={"rcot-tn.png"}
             large={"rcot.png"}
             alt="Design - Redesigning the home page for the Royal College of Occupational Therapists."
           />
-        <ImgModal
+          <ImgModal
             className="work-modal"
             small={"stephanie-cs-tn.png"}
             large={"stephanie-cs.png"}
             alt="Website design & development - a showcase of sculpture work."
           />
-        <ImgModal
+          <ImgModal
             className="work-modal"
             small={"isol8-tn.png"}
             large={"isol8.png"}

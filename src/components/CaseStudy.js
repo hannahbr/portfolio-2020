@@ -20,16 +20,11 @@ const SectionsWrapper = styled.div`
   background: ${({ theme }) => theme.colours.secondary2};
 `
 
-// const SectionsContainer = styled.div`
-//   margin: 0 auto;
-//   padding: ${({ theme }) => theme.spacing[0]} 0;
-//   max-width: 700px;
-// `
-
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
 `
 
 const ProjectContentWrapper = styled.div`
